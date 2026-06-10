@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mundial FIFA 2026 – Fase de Grupos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <h1>🌍 Mundial FIFA 2026</h1>
+      <p class="subtitle">Fase de Grupos · Horario Centro de México (CDT, UTC−5) · 11–27 de junio</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Filtros -->
+    <section class="filters" aria-label="Filtrar por grupo">
+      <span class="filter-label">Filtrar:</span>
+      <div class="filter-buttons" id="filterButtons">
+        <button class="filter-btn active" data-group="all">Todos</button>
+        <button class="filter-btn" data-group="A">A</button>
+        <button class="filter-btn" data-group="B">B</button>
+        <button class="filter-btn" data-group="C">C</button>
+        <button class="filter-btn" data-group="D">D</button>
+        <button class="filter-btn" data-group="E">E</button>
+        <button class="filter-btn" data-group="F">F</button>
+        <button class="filter-btn" data-group="G">G</button>
+        <button class="filter-btn" data-group="H">H</button>
+        <button class="filter-btn" data-group="I">I</button>
+        <button class="filter-btn" data-group="J">J</button>
+        <button class="filter-btn" data-group="K">K</button>
+        <button class="filter-btn" data-group="L">L</button>
+        <button class="filter-btn filter-btn--mex" data-group="MEX">🇲🇽 México</button>
+      </div>
+    </section>
+
+    <!-- Nota México -->
+    <div class="mex-note">⚽ Los partidos con borde verde corresponden a <strong>México</strong></div>
+
+    <!-- Calendario -->
+    <section id="calendar" aria-label="Calendario de partidos"></section>
+  </main>
+
+  <footer>
+    <p>Todos los horarios en Zona Centro de México (CDT, UTC−5). Sujeto a cambios oficiales de FIFA.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
